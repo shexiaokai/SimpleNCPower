@@ -1,0 +1,47 @@
+;	STMicroelectronics dependencies file
+
+[Version]
+Keyword=ST7Project
+Number=1.3
+
+[Root.App...\app\lcd0802.c.Config.0]
+ExternDep= ..\app\lcd0802.c D:\Work\STVD\CXSTM8\Hstm8\mods0.h  ..\header\LCD0802.h ..\header\Main.h D:\Work\STVD\CXSTM8\Hstm8\stdio.h  ..\bsp\stm8s.h ..\bsp\stm8s_conf.h ..\header\Delay.h ..\header\Touch.h  ..\header\ADC.h ..\header\Menu.h ..\header\PWM.h
+
+[Root.App...\app\lcd0802.c.Config.1]
+ExternDep= ..\app\lcd0802.c D:\Work\STVD\CXSTM8\Hstm8\mods0.h  ..\header\LCD0802.h ..\header\Main.h ..\bsp\stm8s.h ..\bsp\stm8s_conf.h  ..\bsp\stm8s_tim1.h ..\header\Delay.h ..\header\Touch.h ..\header\ADC.h
+
+[Root.App...\user\touch.c.Config.0]
+ExternDep= ..\user\touch.c D:\Work\STVD\CXSTM8\Hstm8\mods0.h  ..\header\Touch.h ..\header\Main.h D:\Work\STVD\CXSTM8\Hstm8\stdio.h  ..\bsp\stm8s.h ..\bsp\stm8s_conf.h ..\header\Delay.h ..\header\LCD0802.h  ..\header\ADC.h ..\header\Menu.h ..\header\PWM.h
+
+[Root.App...\user\touch.c.Config.1]
+ExternDep= ..\user\touch.c D:\Work\STVD\CXSTM8\Hstm8\mods0.h  ..\header\Touch.h ..\header\Main.h ..\bsp\stm8s.h ..\bsp\stm8s_conf.h  ..\bsp\stm8s_tim1.h ..\header\Delay.h ..\header\LCD0802.h ..\header\ADC.h
+
+[Root.Bsp.stm8_interrupt_vector.c.Config.0]
+ExternDep= stm8_interrupt_vector.c  D:\Work\STVD\CXSTM8\Hstm8\mods0.h ..\header\Main.h  D:\Work\STVD\CXSTM8\Hstm8\stdio.h ..\bsp\stm8s.h ..\bsp\stm8s_conf.h  ..\header\Delay.h ..\header\LCD0802.h ..\header\Touch.h ..\header\ADC.h  ..\header\Menu.h ..\header\PWM.h
+
+[Root.Bsp.stm8_interrupt_vector.c.Config.1]
+ExternDep= stm8_interrupt_vector.c  D:\Work\STVD\CXSTM8\Hstm8\mods0.h ..\header\Main.h ..\bsp\stm8s.h  ..\bsp\stm8s_conf.h ..\bsp\stm8s_tim1.h ..\header\Delay.h ..\header\LCD0802.h  ..\header\Touch.h ..\header\ADC.h
+
+[Root.User...\user\adc.c.Config.0]
+ExternDep= ..\user\adc.c D:\Work\STVD\CXSTM8\Hstm8\mods0.h ..\header\ADC.h  ..\header\Main.h D:\Work\STVD\CXSTM8\Hstm8\stdio.h ..\bsp\stm8s.h  ..\bsp\stm8s_conf.h ..\header\Delay.h ..\header\LCD0802.h ..\header\Touch.h  ..\header\Menu.h ..\header\PWM.h
+
+[Root.User...\user\adc.c.Config.1]
+ExternDep= ..\user\adc.c D:\Work\STVD\CXSTM8\Hstm8\mods0.h  ..\header\ADC.h ..\header\Main.h ..\bsp\stm8s.h ..\bsp\stm8s_conf.h  ..\bsp\stm8s_tim1.h ..\header\Delay.h ..\header\LCD0802.h ..\header\Touch.h
+
+[Root.User...\user\delay.c.Config.0]
+ExternDep= ..\user\delay.c D:\Work\STVD\CXSTM8\Hstm8\mods0.h  ..\header\Delay.h ..\header\Main.h D:\Work\STVD\CXSTM8\Hstm8\stdio.h  ..\bsp\stm8s.h ..\bsp\stm8s_conf.h ..\header\LCD0802.h ..\header\Touch.h  ..\header\ADC.h ..\header\Menu.h ..\header\PWM.h
+
+[Root.User...\user\delay.c.Config.1]
+ExternDep= ..\user\delay.c D:\Work\STVD\CXSTM8\Hstm8\mods0.h  ..\header\Delay.h ..\header\Main.h ..\bsp\stm8s.h ..\bsp\stm8s_conf.h  ..\bsp\stm8s_tim1.h ..\header\LCD0802.h ..\header\Touch.h ..\header\ADC.h
+
+[Root.User...\user\menu.c.Config.0]
+ExternDep= ..\user\menu.c D:\Work\STVD\CXSTM8\Hstm8\mods0.h  ..\header\Menu.h ..\header\Main.h D:\Work\STVD\CXSTM8\Hstm8\stdio.h  ..\bsp\stm8s.h ..\bsp\stm8s_conf.h ..\header\Delay.h ..\header\LCD0802.h  ..\header\Touch.h ..\header\ADC.h ..\header\PWM.h
+
+[Root.User...\user\pwm.c.Config.0]
+ExternDep= ..\user\pwm.c D:\Work\STVD\CXSTM8\Hstm8\mods0.h ..\header\PWM.h  ..\header\Main.h D:\Work\STVD\CXSTM8\Hstm8\stdio.h ..\bsp\stm8s.h  ..\bsp\stm8s_conf.h ..\header\Delay.h ..\header\LCD0802.h ..\header\Touch.h  ..\header\ADC.h ..\header\Menu.h
+
+[Root.User.main.c.Config.0]
+ExternDep= main.c D:\Work\STVD\CXSTM8\Hstm8\mods0.h ..\header\Main.h  D:\Work\STVD\CXSTM8\Hstm8\stdio.h ..\bsp\stm8s.h ..\bsp\stm8s_conf.h  ..\header\Delay.h ..\header\LCD0802.h ..\header\Touch.h ..\header\ADC.h  ..\header\Menu.h ..\header\PWM.h
+
+[Root.User.main.c.Config.1]
+ExternDep= main.c D:\Work\STVD\CXSTM8\Hstm8\mods0.h ..\header\Main.h  ..\bsp\stm8s.h ..\bsp\stm8s_conf.h ..\bsp\stm8s_tim1.h ..\header\Delay.h  ..\header\LCD0802.h ..\header\Touch.h ..\header\ADC.h
