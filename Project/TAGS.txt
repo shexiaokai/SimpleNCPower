@@ -53,7 +53,7 @@ ADC2_TDRL_RESET_VALUE	..\bsp\stm8s.h	409;"	macro
 ADC2_TypeDef	..\bsp\stm8s.h	401;"	typedef	typeref:struct:ADC2_struct
 ADC2_struct	..\bsp\stm8s.h	390;"	struct
 ADCDataProcess	..\header\adc.h	23;"	prototype	signature:(void)
-ADCDataProcess	..\user\adc.c	62;"	function	signature:(void)
+ADCDataProcess	..\user\adc.c	57;"	function	signature:(void)
 ADC_Buffer	..\user\adc.c	18;"	variable
 ADC_Data	..\user\adc.c	17;"	variable
 ADC_H	..\header\adc.h	14;"	macro
@@ -437,7 +437,7 @@ CSR	..\bsp\stm8s.h	442;"	member	struct:AWU_struct
 CSR	..\bsp\stm8s.h	482;"	member	struct:BEEP_struct
 CSSR	..\bsp\stm8s.h	518;"	member	struct:CLK_struct
 ChgBit	..\bsp\stm8s.h	2792;"	macro
-ClockInit	main.c	253;"	function	signature:(void)
+ClockInit	main.c	275;"	function	signature:(void)
 ClrBit	..\bsp\stm8s.h	2790;"	macro
 Config	..\bsp\stm8s.h	2306;"	member	union:__anon5::__anon6	typeref:struct:__anon5::__anon6::__anon12
 DATA	..\header\lcd0802.h	49;"	macro
@@ -766,7 +766,7 @@ IWDG_PR_RESET_VALUE	..\bsp\stm8s.h	1621;"	macro
 IWDG_RLR_RESET_VALUE	..\bsp\stm8s.h	1622;"	macro
 IWDG_TypeDef	..\bsp\stm8s.h	1615;"	typedef	typeref:struct:IWDG_struct
 IWDG_struct	..\bsp\stm8s.h	1609;"	struct
-Init	main.c	218;"	function	signature:(void)
+Init	main.c	237;"	function	signature:(void)
 KR	..\bsp\stm8s.h	1611;"	member	struct:IWDG_struct
 LCD0802_H	..\header\lcd0802.h	18;"	macro
 LCD_DELAY_15ms	..\header\lcd0802.h	39;"	macro
@@ -774,6 +774,7 @@ LCD_DELAY_20us	..\header\lcd0802.h	37;"	macro
 LCD_DELAY_5ms	..\header\lcd0802.h	38;"	macro
 LCD_DI	..\header\lcd0802.h	28;"	macro
 LCD_ENABLE	..\header\lcd0802.h	51;"	macro
+LED_Init	main.c	253;"	function	signature:(void)
 LSI_VALUE	..\bsp\stm8s.h	119;"	macro
 LTRH	..\bsp\stm8s.h	331;"	member	struct:ADC1_struct
 LTRL	..\bsp\stm8s.h	332;"	member	struct:ADC1_struct
@@ -986,7 +987,7 @@ SWIMCCR	..\bsp\stm8s.h	523;"	member	struct:CLK_struct
 SWR	..\bsp\stm8s.h	514;"	member	struct:CLK_struct
 SetBit	..\bsp\stm8s.h	2789;"	macro
 SetPWM	..\header\pwm.h	18;"	prototype	signature:(u8,u8)
-SetPWM	..\user\pwm.c	60;"	function	signature:(u8 ch1,u8 ch3)
+SetPWM	..\user\pwm.c	62;"	function	signature:(u8 ch1,u8 ch3)
 TBR	..\bsp\stm8s.h	444;"	member	struct:AWU_struct
 TDRH	..\bsp\stm8s.h	327;"	member	struct:ADC1_struct
 TDRH	..\bsp\stm8s.h	398;"	member	struct:ADC2_struct
@@ -1277,7 +1278,7 @@ TIM5_ARRH_RESET_VALUE	..\bsp\stm8s.h	1167;"	macro
 TIM5_ARRL_ARR	..\bsp\stm8s.h	1239;"	macro
 TIM5_ARRL_RESET_VALUE	..\bsp\stm8s.h	1168;"	macro
 TIM5_BaseAddress	..\bsp\stm8s.h	2584;"	macro
-TIM5_CAP_COM_IRQHandler	..\user\pwm.c	54;"	function	signature:(void)
+TIM5_CAP_COM_IRQHandler	..\user\pwm.c	55;"	function	signature:(void)
 TIM5_CAP_COM_IRQHandler	stm8_interrupt_vector.c	26;"	prototype	file:	signature:(void)
 TIM5_CCER1_CC1E	..\bsp\stm8s.h	1228;"	macro
 TIM5_CCER1_CC1P	..\bsp\stm8s.h	1227;"	macro
@@ -1383,7 +1384,7 @@ TIM6_SR1_RESET_VALUE	..\bsp\stm8s.h	1280;"	macro
 TIM6_SR1_TIF	..\bsp\stm8s.h	1309;"	macro
 TIM6_SR1_UIF	..\bsp\stm8s.h	1310;"	macro
 TIM6_TypeDef	..\bsp\stm8s.h	1272;"	typedef	typeref:struct:TIM6_struct
-TIM6_UPD_OVF_TRG_IRQHandler	..\user\adc.c	111;"	function	signature:(void)
+TIM6_UPD_OVF_TRG_IRQHandler	..\user\adc.c	106;"	function	signature:(void)
 TIM6_UPD_OVF_TRG_IRQHandler	stm8_interrupt_vector.c	27;"	prototype	file:	signature:(void)
 TIM6_struct	..\bsp\stm8s.h	1260;"	struct
 TINY	..\bsp\stm8s.h	124;"	macro
@@ -1682,11 +1683,11 @@ _stext	stm8_interrupt_vector.c	23;"	prototype	file:
 _vectab	stm8_interrupt_vector.c	30;"	variable
 adc_finsh_flag	..\user\adc.c	19;"	variable
 assert_failed	..\bsp\stm8s_conf.h	74;"	prototype	signature:(uint8_t* file, uint32_t line)
-assert_failed	main.c	276;"	function	signature:(u8* file, u32 line)
+assert_failed	main.c	299;"	function	signature:(u8* file, u32 line)
 assert_param	..\bsp\stm8s_conf.h	72;"	macro
 assert_param	..\bsp\stm8s_conf.h	76;"	macro
 bool	..\bsp\stm8s.h	231;"	typedef	typeref:enum:__anon1
-curcor_place	main.c	10;"	variable
+curcor_place	main.c	28;"	variable
 disableInterrupts	..\bsp\stm8s.h	2717;"	macro
 disableInterrupts	..\bsp\stm8s.h	2726;"	macro
 disableInterrupts	..\bsp\stm8s.h	2736;"	macro
@@ -1709,11 +1710,11 @@ io	..\user\menu.c	28;"	variable	file:
 io_adc	..\user\menu.c	24;"	variable	file:
 limit_i	..\user\menu.c	20;"	variable
 limit_v	..\user\menu.c	19;"	variable
-main	main.c	12;"	function
+main	main.c	30;"	function
 nop	..\bsp\stm8s.h	2720;"	macro
 nop	..\bsp\stm8s.h	2729;"	macro
 nop	..\bsp\stm8s.h	2739;"	macro
-output_flag	main.c	8;"	variable
+output_flag	main.c	24;"	variable
 printf	d:\work\stvd\cxstm8\hstm8\stdio.h	17;"	prototype	signature:(char *format, ...)
 putchar	d:\work\stvd\cxstm8\hstm8\stdio.h	18;"	prototype	signature:(char c)
 puts	d:\work\stvd\cxstm8\hstm8\stdio.h	19;"	prototype	signature:(char *s)
@@ -1724,9 +1725,9 @@ s16	..\bsp\stm8s.h	223;"	typedef
 s32	..\bsp\stm8s.h	222;"	typedef
 s8	..\bsp\stm8s.h	224;"	typedef
 scanf	d:\work\stvd\cxstm8\hstm8\stdio.h	20;"	prototype	signature:(char *format, ...)
-set_flag	main.c	9;"	variable
+set_flag	main.c	26;"	variable
 set_i	..\user\menu.c	18;"	variable
-set_mode	main.c	7;"	variable
+set_mode	main.c	22;"	variable
 set_v	..\user\menu.c	17;"	variable
 sim	..\bsp\stm8s.h	2719;"	macro
 sim	..\bsp\stm8s.h	2728;"	macro
